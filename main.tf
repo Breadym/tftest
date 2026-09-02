@@ -7,7 +7,7 @@ resource "aws_instance" "example" {
   instance_type = "t3.micro"
   
   tags = {
-    Name = "my-vm"
+    Name = "my-vm-git"
 
   }
 }
