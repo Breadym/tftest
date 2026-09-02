@@ -14,13 +14,13 @@ resource "aws_instance" "example" {
               EOF
   
   tags = {
-    Name = "my-vm-git"
+    Name = "New-VM"
 
   }
 }
 
 resource "aws_security_group" "instance" {
-  name = "tf-example-instance"
+  name = "tf-sg-instance"
   
   ingress {
     from_port = 8080
@@ -28,5 +28,4 @@ resource "aws_security_group" "instance" {
     protocol = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
-
 }
